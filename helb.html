@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get professional HELP application services in Kenya.">
+    <title>HELB & Scholarship Applications Services in Kenya | Meike Him</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* HELB Page Specific Styles */
+
+        
+        .helb-hero {
+            background: linear-gradient(135deg, #125f9a 0%, #0e5288 100%);
+            color: white;
+            padding: 5rem 0;
+            text-align: center;
+            position: relative;
+        }
+        
+        .helb-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .helb-hero .highlight {
+            color: #ff6a00;
+        }
+        
+        .helb-hero .title-icon {
+            margin-right: 15px;
+            font-size: 2.2rem;
+            vertical-align: middle;
+        }
+
+ .intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* On larger screens, switch layout to side-by-side */
+@media (min-width: 768px) {
+  .intro-section {
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .intro-section p {
+    flex: 1;
+    max-width: 60%;
+  }
+
+  .helb-image {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+  }
+}
+
+
+        .helb-image{
+            border-radius: 6px;
+            width: 100%;
+            margin-top: 30px;
+            align-items: center;
+        }
+        
+        .service-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid #ff6a00;
+            transition: 0.3s;
+        }
+
+        .service-card:hover{
+            box-shadow: 0 4px 12px rgba(18, 95, 154, 0.3);
+            cursor: pointer;
+
+        }
+        
+        .service-card h2 {
+            color: #125f9a;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .service-card h2 .icon {
+            color: #ff6a00;
+            font-size: 1.5rem;
+        }
+        
+        .service-card ul {
+            padding-left: 1.5rem;
+        }
+        
+        .service-card li {
+            margin-bottom: 0.8rem;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        
+        .service-card li::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-color: #ff6a00;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+            mask-repeat: no-repeat;
+            mask-position: center;
+            flex-shrink: 0;
+            margin-top: 0.15rem;
+        }
+        
+        .guidelines {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border-left: 4px solid #125f9a;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .guidelines:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(18, 95, 154, 0.3);
+            cursor: pointer;
+        }
+        
+        .guidelines h2 {
+            color: #125f9a;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .guidelines h2 .icon {
+            font-size: 1.5rem;
+        }
+        
+        .guideline-item {
+            margin-bottom: 1.5rem;
+        }
+        
+        .guideline-item h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #333;
+        }
+        
+        .under-18 {
+            background: #fff8e6;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem 0;
+            border: 1px dashed #ff6a00;
+            transition:  0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .under-18:hover{
+            transform: translateY(-5px);
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(18, 95, 154, 0.3);
+;
+        }
+        
+        .under-18 h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #125f9a;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+        
+        .benefit-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+        
+        .benefit-icon {
+            color: #ff6a00;
+            font-size: 1.5rem;
+            margin-top: 0.2rem;
+        }
+        
+        .cta-box {
+            text-align: center;
+            background: linear-gradient(to right, #ff6a00, #ff8c00);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            margin: 4rem 0;
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 1.5rem 0;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .phone-link {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .highlight-text {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 500;
+            color: #125f9a;
+        }
+        
+        .section-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #125f9a;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/254700800275?text=Hi%20Meike,%20I%20need%20help%20with..." class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="index.html" class="logo">
+                    <span style="color: #125f9a;">Meike</span><span style="color: #ff6a00;">Him</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="index.html#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="helb-hero">
+        <div class="container">
+            <h1><i class="fas fa-graduation-cap title-icon"></i> <span class="highlight">HELB & Scholarship</span> Application Services</h1>
+            <p class="lead">Trusted, Simple & Fast financial support for your education</p>
+        </div>
+    </section>
+
+    <div class="container">
+<section class="intro-section">
+  <p class="large-text">
+    Getting financial support for your education doesn't have to be complicated. At MeikeHim, we guide you step-by-step through both HELB Loan and Government Scholarship applications — so you can focus on your studies, not paperwork.
+  </p>
+  <p class="highlight-text">
+    <i class="fas fa-hand-point-right"></i> Whether you're applying for the first time or need help figuring out your eligibility, we're here for you.
+  </p>
+  <img src="images/Helb poster.png" class="helb-image" alt="HELB and SCHOLARSHIP application services" loading="lazy">
+</section>
+
+
+        <section class="services-section">
+            <h2 class="section-title"><i class="fas fa-file-alt"></i> What We Help You Apply For</h2>
+            
+            <div class="service-types">
+                <div class="service-card">
+                    <h2><i class="fas fa-check-circle icon"></i> 1. HELB Loan</h2>
+                    <p>We assist with:</p>
+                    <ul>
+                        <li>First-Time Undergraduate & TVET loan applications</li>
+                        <li>Proper form filling and portal guidance</li>
+                        <li>Uploading required documents</li>
+                        <li>Printing and submission assistance</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h2><i class="fas fa-check-circle icon"></i> 2. Government Scholarships</h2>
+                    <p>We support students in public universities and colleges in applying for government scholarships through the Funding Portal.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="guidelines">
+            <h2><i class="fas fa-exclamation-triangle icon"></i> Important Application Guidelines</h2>
+            
+            <div class="guideline-item">
+                <h3><i class="fas fa-check-circle" style="color: #25D366;"></i> Public University Students:</h3>
+                <p>Eligible for both HELB and Scholarship.</p>
+            </div>
+            
+            <div class="guideline-item">
+                <h3><i class="fas fa-exclamation-circle" style="color: #ff6a00;"></i> Private University Students:</h3>
+                <p>Eligible for HELB only — scholarships are not available.</p>
+            </div>
+            
+            <div class="guideline-item">
+                <h3><i class="fas fa-exclamation-circle" style="color: #ff6a00;"></i> Diploma Students in Universities:</h3>
+                <p>Not eligible for both HELB and SCHOLASHIP.<br>(Helb & Scholarships do not apply to diploma programs under universities.)</p>
+            </div>
+        </section>
+
+        <section class="under-18">
+            <h2><i class="fas fa-child"></i> Are You Under 18 Without a National ID?</h2>
+            <p>Good news — you can still apply! Here's how:</p>
+            <ul>
+                <li>Open a Junior Bank Account under your parent or guardian's name</li>
+                <li>We'll guide you through every step of the process, even without an ID</li>
+            </ul>
+        </section>
+
+        <section class="benefits-section">
+            <h2 class="section-title"><i class="fas fa-rocket"></i> Why Choose Meike Him?</h2>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-comments"></i></div>
+                    <div>
+                        <h3>One-on-one assistance</h3>
+                        <p>Personalized help via WhatsApp throughout the process</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-check-double"></i></div>
+                    <div>
+                        <h3>Error-free applications</h3>
+                        <p>We ensure all details are accurate before submission</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                    <div>
+                        <h3>Fast & reliable</h3>
+                        <p>Quick responses and dependable service</p>
+                    </div>
+                </div>
+                
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-hands-helping"></i></div>
+                    <div>
+                        <h3>Comprehensive support</h3>
+                        <p>Also available for KRA PIN and KUCCPS Transfers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-box">
+            <h2><i class="fas fa-phone-alt"></i> Ready to Apply?</h2>
+            <p><i class="fas fa-comment-dots"></i> Reach out now for quick application help:</p>
+            
+            <a href="https://wa.me/254700800275?text=Hi%20Meike Him,%20I%20need%20help%20with%20HELB%20application." class="whatsapp-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> Click to Chat on WhatsApp
+            </a>
+            
+            <p>Or call/text:</p>
+            <a href="tel:+254700800275" class="phone-link"><i class="fas fa-mobile-alt"></i> +254 700 800 275</a>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Meike Him</h3>
+                    <p>Simplifying bureaucratic processes for Kenyan parents since 2023.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/meikehim" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/254700800275" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/meike-him" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html#home">Home</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="kra.html">KRA Applications</a></li>
+                        <li><a href="helb.html">HELB Applications</a></li>
+                        <li><a href="kuccps.html">KUCCPS Transfers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Meike Him. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

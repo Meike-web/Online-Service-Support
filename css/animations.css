@@ -1,0 +1,48 @@
+/* Animation Delays */
+.fade-in {
+    animation-delay: 0.3s;
+}
+
+.slide-in.from-left {
+    animation-delay: 0.3s;
+}
+
+.slide-in.from-right {
+    animation-delay: 0.6s;
+}
+
+.slide-in.from-bottom {
+    animation-delay: 0.9s;
+}
+
+.service-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.service-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.service-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.testimonial-card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.testimonial-card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.testimonial-card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.contact-info {
+    animation-delay: 0.3s;
+}
+
+.contact-form {
+    animation-delay: 0.6s;
+}
